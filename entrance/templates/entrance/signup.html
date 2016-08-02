@@ -1,0 +1,44 @@
+<html>
+	<body>
+	<form name="form" action="{% url "entrance.views.login" %}" method="POST" >{% csrf_token %}
+	
+	<div style="max-width:470px;">
+		<center>FirstName:<input type="text" style="marginleft:20%;" name="FirstName" value=""/></center>
+	</div><br>
+	
+	<div style="max-width:470px;">
+		<center>LastName: <input type="text" style="marginleft:20%;" name="LastName" value=""/></center>
+	</div><br>
+
+	<div style="max-width:470px;">
+		<center>E-mail: <input type="text" style="marginleft:20%;" name="email" value=""/></center>
+	</div><br>
+
+
+	<div style="max-width:470px;">
+		<center>Password:<input type="password" style="marginleft:20%;" name="password" value=""/></center>
+	</div><br>
+	
+	<div style="max-width:470px;">
+		<center>Address: <input type="text" style="marginleft:20%;" name="address" value=""/></center>
+	</div><br>
+
+
+	<div style="max-width:470px;">
+		<center>College:<input type="text" style="marginleft:20%;" name="college" value=""/></center>
+	</div><br>
+
+	
+	<div style="max-width:470px;">
+	<center> <button style=border:0px;backgroundcolor:#4285F4;margin-top:8%;height:35px;width:80%;margin-left:19%;"
+	type="submit" value="Sign Up" ><strong>Sign Up</strong></button></center>
+	</div>
+
+    <div>
+    
+    		<p>Already Join Then </p><br>
+    		<a href="/loginform/">Log in</a>
+    </div>
+
+</form>
+</body></html>

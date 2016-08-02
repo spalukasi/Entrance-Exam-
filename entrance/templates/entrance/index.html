@@ -1,0 +1,12 @@
+<h1>Welcome</h1>
+{% if all_student %}
+<ul>
+   {% for student in all_student %}
+   <li> 
+	<a href ="/student/{{ student.id }}/">{{ student.firstname }}</a>
+   </li>
+   {% endfor %}
+</ul>
+{% else %}
+   <h3> No student are availabel </h3>
+{% endif %}   

@@ -1,0 +1,25 @@
+<html>
+	<body>
+	<form name="form" action="{% url "entrance.views.login" %}" method="POST" >{% csrf_token %}
+	
+	<div style="max-width:470px;">
+		<center>Username:<input type="text" style="marginleft:20%;" name="username" value=""/></center>
+	</div><br>
+	
+	<div style="max-width:470px;">
+		<center>Password: <input type="password" style="marginleft:20%;" name="password" value=""/></center>
+	</div><br>
+	
+	<div style="max-width:470px;">
+	<center> <button style=border:0px;backgroundcolor:#4285F4;margin-top:8%;height:35px;width:80%;margin-left:19%;"
+	type="submit" value="Login" ><strong>Login</strong></button></center>
+	</div>
+
+    <div>
+    
+    		<p>Not a member yet? Join Us</p><br>
+    		<a href="/signupform/">Sign Up</a>
+    </div>
+
+</form>
+</body></html>

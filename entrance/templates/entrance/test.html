@@ -1,0 +1,18 @@
+<h1>Welcome To Model Test</h1>
+{% if all_question %}
+<ol type="1">
+   {% for english_question in all_question %}
+   <li> <b>{{ english_question.question }}</br></b></li>
+	<form>
+		<ol type ="a">
+			<li><input type="radio" name="option">{{ english_question.option_a }}</br></li>
+			<li><input type="radio" name="option">{{ english_question.option_b }}</br></li>
+			<li><input type="radio" name="option">{{ english_question.option_c }}</br></li>
+			<li><input type="radio" name="option">{{ english_question.option_d }}</br></br></li>
+		</ol>
+	</form>
+   {% endfor %}
+</ol>
+{% else %}
+   <h3> No question are availabel </h3>
+{% endif %}   
